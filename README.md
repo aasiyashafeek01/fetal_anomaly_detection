@@ -4,7 +4,7 @@ The project objective is to create a Deep Learning model to detect Down Syndrome
 PROJECT OVERVIEW:
 A CNN model was developed first to classify the input ultrasound scans as standard or non-standard based on the visibility of NT region.
 After extensive preprocessing steps, a U-Net segmentation model was then used to isolate the Nuchal Translucency (NT) region from the images classified as standard, and the NT thickness was then measured using image processing techniques.
-Based on the measured NT value, a rule-based classification approach was applied using a threshold derived from the dataset’s NT value distribution to estimate the risk of fetus having down syndrome.
+Based on the measured NT value, a rule-based classification approach was applied using a threshold derived from the dataset’s NT value distribution to determine the risk of fetus having down syndrome.
 
 RESULTS AND LIMITATIONS:
 A complete and functional pipeline was successfully developed, covering NT region segmentation using U-Net, NT thickness measurement, threshold-based anomaly indication. While the workflow demonstrates a feasible proof-of-concept system, the model performance and reliability are constrained by several factors.
